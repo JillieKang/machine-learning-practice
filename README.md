@@ -1,71 +1,36 @@
-# machine-learning-practice
+# Skills Developed
 
-## Overview
+- Machine learning pipeline design
+- Supervised learning for continuous value prediction
+- Supervised learning for categorical classification
+- Unsupervised learning for data clustering
+- Feature selection and regularization
+- Model evaluation and diagnostic metrics
+- Data visualization
 
-This repository contains machine learning practices and methodological exercises implemented in Python using scikit-learn. It documents the development of foundational machine learning skills, including supervised learning, unsupervised learning, predictive modelling, classification, clustering, model evaluation, and data preprocessing.
-
-The repository focuses on core machine learning algorithms commonly used in data science and computational social science research. Through hands-on exercises, it demonstrates the complete machine learning workflow from data preparation and train-test splitting to model fitting, prediction, evaluation, and interpretation.
-
-The repository is organised into the following section:
-
-- **practice**: Exercises and methodological implementations of machine learning algorithms and evaluation techniques
-
-Jupyter Notebook files are available in the `practice` folder.
-
-
-## Skills Developed
-
-- Supervised machine learning
-- Unsupervised machine learning
-- Regression analysis
-- Classification analysis
-- Clustering analysis
-- Predictive modelling
-- Data preprocessing
-- Feature selection
-- Train-test splitting
-- Stratified sampling
-- Model fitting and prediction
-- Model evaluation
-- Data visualisation
-
-
-## Tools
+# Tools
 
 - Python
 - Jupyter Notebook
-- scikit-learn
 
+# Packages
 
-## Python Libraries
+- `pandas`
+- `numpy`
+- `matplotlib.pyplot`
+- `sklearn.model_selection` (`train_test_split`)
+- `sklearn.linear_model` (`LinearRegression`, `Ridge`, `Lasso`, `LogisticRegression`)
+- `sklearn.metrics` (`mean_squared_error`, `r2_score`, `classification_report`, `confusion_matrix`, `accuracy_score`, `roc_curve`, `auc`, `silhouette_score`)
+- `sklearn.cluster` (`KMeans`)
+- `sklearn.decomposition` (`PCA`)
+- `sklearn.tree` (`DecisionTreeClassifier`, `plot_tree`)
+- `sklearn.ensemble` (`RandomForestClassifier`)
 
-### Data Manipulation
+# Practices: Topics Covered
 
-- pandas
-- numpy
+## 1. Machine Learning Based on Linear Regression
 
-### Data Visualisation
-
-- matplotlib
-
-### Machine Learning
-
-- scikit-learn
-
-
-## Practices: Topics Covered
-
-### 1. Supervised Machine Learning for Prediction
-
-#### Algorithm
-
-- Linear Regression
-
-#### Dataset
-
-- Narcissism and Facebook Usage Dataset
-
-#### Functions
+### Functions
 
 - `train_test_split()`
 - `LinearRegression()`
@@ -74,147 +39,134 @@ Jupyter Notebook files are available in the `practice` folder.
 - `mean_squared_error()`
 - `r2_score()`
 
-#### Key Operations
+### Key Operations
 
-- Importing and managing structured tabular data
-- Defining feature and target variables
-- Splitting data into training and test sets
-- Training linear regression models
-- Generating predictions on unseen data
-- Evaluating predictive performance using Mean Squared Error (MSE)
-- Evaluating explanatory power using R-squared (R²)
-- Interpreting relationships between behavioural and demographic variables
+- Splitting dataset into training and testing sets
+- Fitting Ordinary Least Squares (OLS) Linear Regression models
+- Predicting continuous target variables
+- Evaluating predictive models using Mean Squared Error (MSE) and R-squared ($R^2$) metrics
+- Visualizing actual vs. predicted values with scatter plots
 
-#### Concepts Covered
+## 2. Regularization
 
-- Supervised learning
-- Prediction
-- Regression modelling
-- Continuous outcome variables
-- Model evaluation
+### Functions
 
+- `Ridge()`
+- `Lasso()`
+- `fit()`
+- `predict()`
+- `mean_squared_error()`
+- `r2_score()`
 
-### 2. Supervised Machine Learning for Classification
+### Key Operations
 
-#### Algorithm
+- Implementing Ridge Regression with L2 regularization to prevent overfitting
+- Implementing Lasso Regression with L1 regularization for simultaneous regularization and feature selection
+- Varying the regularization strength ($\alpha$/$\lambda$) to evaluate impact on model parameters
+- Extracting and analyzing model coefficients from Lasso models to identify dropped features
+- Evaluating and comparing MSE and $R^2$ metrics across different lambda settings
 
-- Logistic Regression
+## 3. Logistic Regression
 
-#### Dataset
-
-- Admission Decision Dataset
-
-#### Functions
+### Functions
 
 - `train_test_split()`
 - `LogisticRegression()`
 - `fit()`
 - `predict()`
-- `classification_report()`
-- `confusion_matrix()`
+- `predict_proba()`
 - `accuracy_score()`
+- `confusion_matrix()`
+- `classification_report()`
 - `roc_curve()`
 - `auc()`
 
-#### Key Operations
+### Key Operations
 
-- Preparing binary classification datasets
-- Defining predictors and outcome variables
-- Performing stratified train-test splitting
-- Training logistic regression models
-- Predicting class membership
-- Evaluating classification accuracy
-- Constructing confusion matrices
-- Calculating precision, recall, and F1 scores
-- Generating ROC curves
-- Calculating Area Under the Curve (AUC)
+- Splitting classification dataset into training and testing sets
+- Fitting binary Logistic Regression models for decision prediction
+- Generating class predictions and prediction probabilities
+- Evaluating classification performance using prediction accuracy
+- Computing confusion matrices to inspect true positives, true negatives, false positives, and false negatives
+- Generating classification reports to inspect precision, recall, and F1-score per class
+- Plotting Receiver Operating Characteristic (ROC) curves and calculating Area Under the Curve (AUC)
 
-#### Concepts Covered
+## 4. Decision Tree
 
-- Binary classification
-- Logistic regression
-- Classification performance metrics
-- Sensitivity and specificity
-- ROC analysis
-- Model validation
+### Functions
 
+- `DecisionTreeClassifier()`
+- `fit()`
+- `predict()`
+- `accuracy_score()`
+- `confusion_matrix()`
+- `classification_report()`
+- `plot_tree()`
+- `plt.figure()`
+- `plt.show()`
 
-### 3. Unsupervised Machine Learning for Clustering
+### Key Operations
 
-#### Algorithm
+- Fitting non-linear Decision Tree Classification models
+- Handling categorical and continuous features automatically for partition mapping
+- Generating class predictions on evaluation test data
+- Evaluating classification performance metrics against baseline models
+- Visualizing decision trees graphically with split nodes, Gini criteria, and leaf samples
 
-- K-Means Clustering
+## 5. Random Forest
 
-#### Functions
+### Functions
+
+- `RandomForestClassifier()`
+- `fit()`
+- `predict()`
+- `accuracy_score()`
+- `confusion_matrix()`
+- `classification_report()`
+
+### Key Operations
+
+- Implementing ensemble learning via bagging with Random Forest classifiers
+- Configuring model parameters such as the number of estimators for forest construction
+- Training multiple decision trees on random subsets of data to reduce model variance
+- Generating robust ensemble class predictions
+- Evaluating performance gains compared to a single standalone decision tree
+
+## 6. K-Means Clustering
+
+### Functions
+
+- `range()`
+- `KMeans()`
+- `fit()`
+- `silhouette_score()`
+- `zip()`
+- `print()`
+
+### Key Operations
+
+- Implementing distance-based, centroid-based unsupervised clustering algorithms
+- Iterating through a range of cluster numbers ($K$ values) to evaluate model quality
+- Calculating inertia (distortion) values across $K$ values for the Elbow Method
+- Computing Silhouette Scores to measure cluster separation and cohesion
+- Printing and evaluating performance metrics to guide the choice of optimal $K$
+
+## 7. Principal Component Analysis (PCA)
+
+### Functions
 
 - `KMeans()`
-- `silhouette_score()`
+- `fit()`
+- `PCA()`
+- `fit_transform()`
+- `plt.figure()`
+- `plt.scatter()`
+- `legend_elements()`
 
-#### Key Operations
+### Key Operations
 
-- Preparing multivariate datasets
-- Applying K-Means clustering
-- Determining the optimal number of clusters
-- Implementing the Elbow Method
-- Calculating Silhouette Scores
-- Comparing clustering solutions across different values of K
-- Assigning observations to clusters
-- Evaluating clustering quality
-
-#### Concepts Covered
-
-- Unsupervised learning
-- Cluster analysis
-- Pattern discovery
-- Cluster validation
-- Similarity and group structure
-
-
-## Machine Learning Workflow
-
-### Data Preparation
-
-- Importing datasets
-- Selecting predictor and outcome variables
-- Preparing feature matrices
-- Handling structured tabular data
-
-### Model Training
-
-- Train-test splitting
-- Stratified sampling
-- Model fitting
-- Prediction generation
-
-### Model Evaluation
-
-#### Regression
-
-- Mean Squared Error (MSE)
-- R-squared (R²)
-
-#### Classification
-
-- Accuracy
-- Precision
-- Recall
-- F1-score
-- Confusion Matrix
-- ROC Curve
-- Area Under the Curve (AUC)
-
-#### Clustering
-
-- Elbow Method
-- Silhouette Score
-
-
-## Skills Developed
-
-This repository was developed to build a practical understanding of the core machine learning paradigms:
-
-- Predicting continuous outcomes using regression models
-- Classifying categorical outcomes using supervised learning algorithms
-- Discovering hidden group structures using unsupervised learning techniques
-- Evaluating model performance using appropriate statistical metrics
-- Implementing reproducible machine learning workflows in Python
+- Fitting a final K-Means model based on the optimal number of clusters discovered
+- Reducing multi-dimensional feature space down to two principal components using PCA
+- Transforming high-dimensional data into PC1 and PC2 score spaces
+- Appending PCA projection components and cluster assignments to the working DataFrame
+- Visualizing multi-dimensional clusters in a 2D PCA scatter plot space with color-coded labels
