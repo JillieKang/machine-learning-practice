@@ -12,7 +12,6 @@ The repository is organised into the following section:
 
 Jupyter Notebook files are available in the `practice` folder.
 
----
 
 ## Skills Developed
 
@@ -30,7 +29,6 @@ Jupyter Notebook files are available in the `practice` folder.
 - Model evaluation
 - Data visualisation
 
----
 
 ## Tools
 
@@ -38,7 +36,6 @@ Jupyter Notebook files are available in the `practice` folder.
 - Jupyter Notebook
 - scikit-learn
 
----
 
 ## Python Libraries
 
@@ -55,7 +52,6 @@ Jupyter Notebook files are available in the `practice` folder.
 
 - scikit-learn
 
----
 
 ## Practices: Topics Covered
 
@@ -97,7 +93,6 @@ Jupyter Notebook files are available in the `practice` folder.
 - Continuous outcome variables
 - Model evaluation
 
----
 
 ### 2. Supervised Machine Learning for Classification
 
@@ -143,7 +138,6 @@ Jupyter Notebook files are available in the `practice` folder.
 - ROC analysis
 - Model validation
 
----
 
 ### 3. Unsupervised Machine Learning for Clustering
 
@@ -175,7 +169,6 @@ Jupyter Notebook files are available in the `practice` folder.
 - Cluster validation
 - Similarity and group structure
 
----
 
 ## Machine Learning Workflow
 
@@ -215,7 +208,6 @@ Jupyter Notebook files are available in the `practice` folder.
 - Elbow Method
 - Silhouette Score
 
----
 
 ## Skills Developed
 
