@@ -1,4 +1,18 @@
-# Skills Developed
+# machine-learning-practice
+
+## Overview
+This repository contains machine learning practices focused on developing analytical skills applicable to quantitative social science research. The repository is primarily based on *Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow: Concepts, Tools, and Techniques to Build Intelligent Systems* by Aurélien Géron and documents the development of machine learning techniques, model evaluation methods, and computational approaches to data analysis.
+
+The repository is organised into the following section:
+
+**practices**: Exercises and methodological implementations based on textbook materials and tutorials
+
+Jupyter Notebook (`.ipynb`) files are available in the `practices` folder.
+
+The datasets used throughout the repository are synthetic datasets generated with the assistance of large language models (LLMs) based on examples and scenarios presented in the textbook. The repository focuses on methodological learning and implementation rather than substantive empirical analysis.
+
+
+## Skills Developed
 
 - Machine learning pipeline design
 - Supervised learning for continuous value prediction
@@ -8,12 +22,12 @@
 - Model evaluation and diagnostic metrics
 - Data visualization
 
-# Tools
+## Tools
 
 - Python
 - Jupyter Notebook
 
-# Packages
+## Python Packages
 
 - `pandas`
 - `numpy`
@@ -26,7 +40,7 @@
 - `sklearn.tree` (`DecisionTreeClassifier`, `plot_tree`)
 - `sklearn.ensemble` (`RandomForestClassifier`)
 
-# Practices: Topics Covered
+## Topics Covered
 
 ## 1. Machine Learning Based on Linear Regression
 
