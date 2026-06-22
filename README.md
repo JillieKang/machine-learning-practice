@@ -40,12 +40,38 @@ The datasets used throughout the repository are synthetic datasets generated wit
 - `sklearn.tree` (`DecisionTreeClassifier`, `plot_tree`)
 - `sklearn.ensemble` (`RandomForestClassifier`)
 
-## Topics Covered
+## Skills Developed
+- Machine learning pipeline design
+- Supervised learning for continuous value prediction
+- Supervised learning for categorical classification
+- Unsupervised learning for data clustering
+- Feature selection and regularization
+- Model evaluation and diagnostic metrics
+- Data visualization
+
+## Tools
+- Python
+- Jupyter Notebook
+
+## Packages
+- `pandas`
+- `numpy`
+- `matplotlib.pyplot`
+- `sklearn.model_selection` (`train_test_split`)
+- `sklearn.linear_model` (`LinearRegression`, `Ridge`, `Lasso`, `LogisticRegression`)
+- `sklearn.neighbors` (`KNeighborsClassifier`)
+- `sklearn.svm` (`SVC`)
+- `sklearn.tree` (`DecisionTreeClassifier`, `plot_tree`)
+- `sklearn.ensemble` (`RandomForestClassifier`)
+- `sklearn.cluster` (`KMeans`)
+- `sklearn.decomposition` (`PCA`)
+- `sklearn.metrics` (`mean_squared_error`, `r2_score`, `classification_report`, `confusion_matrix`, `accuracy_score`, `roc_curve`, `auc`, `silhouette_score`)
+
+## Practices: Topics Covered
 
 ## 1. Machine Learning Based on Linear Regression
 
-### Functions
-
+#### Functions
 - `train_test_split()`
 - `LinearRegression()`
 - `fit()`
@@ -53,8 +79,7 @@ The datasets used throughout the repository are synthetic datasets generated wit
 - `mean_squared_error()`
 - `r2_score()`
 
-### Key Operations
-
+#### Key Operations
 - Splitting dataset into training and testing sets
 - Fitting Ordinary Least Squares (OLS) Linear Regression models
 - Predicting continuous target variables
@@ -63,8 +88,7 @@ The datasets used throughout the repository are synthetic datasets generated wit
 
 ## 2. Regularization
 
-### Functions
-
+#### Functions
 - `Ridge()`
 - `Lasso()`
 - `fit()`
@@ -72,8 +96,7 @@ The datasets used throughout the repository are synthetic datasets generated wit
 - `mean_squared_error()`
 - `r2_score()`
 
-### Key Operations
-
+#### Key Operations
 - Implementing Ridge Regression with L2 regularization to prevent overfitting
 - Implementing Lasso Regression with L1 regularization for simultaneous regularization and feature selection
 - Varying the regularization strength ($\alpha$/$\lambda$) to evaluate impact on model parameters
@@ -82,8 +105,7 @@ The datasets used throughout the repository are synthetic datasets generated wit
 
 ## 3. Logistic Regression
 
-### Functions
-
+#### Functions
 - `train_test_split()`
 - `LogisticRegression()`
 - `fit()`
@@ -95,20 +117,52 @@ The datasets used throughout the repository are synthetic datasets generated wit
 - `roc_curve()`
 - `auc()`
 
-### Key Operations
-
+#### Key Operations
 - Splitting classification dataset into training and testing sets
 - Fitting binary Logistic Regression models for decision prediction
 - Generating class predictions and prediction probabilities
 - Evaluating classification performance using prediction accuracy
 - Computing confusion matrices to inspect true positives, true negatives, false positives, and false negatives
-- Generating classification reports to inspect precision, recall, and F1-score per class
-- Plotting Receiver Operating Characteristic (ROC) curves and calculating Area Under the Curve (AUC)
+- Generating classification reports to inspect precision, recall, and f1-score per class
+- Plotting Receiver Operating Characteristic (ROC) curves and calculating Area Under Curve (AUC)
 
-## 4. Decision Tree
+## 4. K-Nearest Neighbors (KNN)
 
-### Functions
+#### Functions
+- `KNeighborsClassifier()`
+- `fit()`
+- `predict()`
+- `accuracy_score()`
+- `confusion_matrix()`
+- `classification_report()`
 
+#### Key Operations
+- Implementing instance-based, non-parametric classification using K-Nearest Neighbors
+- Configuring the number of neighbors ($K$) to control model decision boundaries
+- Training the neighbor classifier on multidimensional feature matrices
+- Evaluating class predictions and prediction performance
+- Analyzing structural confusion matrices and full metrics classification reports
+
+## 5. Support Vector Machine (SVM)
+
+#### Functions
+- `SVC()`
+- `fit()`
+- `predict()`
+- `accuracy_score()`
+- `confusion_matrix()`
+- `classification_report()`
+
+#### Key Operations
+- Implementing maximum-margin classification architectures using Support Vector Classifiers
+- Setting up optimization and decision boundaries for optimal hyperplane construction
+- Fitting support vector classification boundaries on categorical training datasets
+- Generating target boundary class predictions on non-training holdout splits
+- Performing cross-validation diagnostic analysis using comprehensive classification reports
+
+## 6. Decision Tree
+
+#### Functions
 - `DecisionTreeClassifier()`
 - `fit()`
 - `predict()`
@@ -119,18 +173,16 @@ The datasets used throughout the repository are synthetic datasets generated wit
 - `plt.figure()`
 - `plt.show()`
 
-### Key Operations
-
+#### Key Operations
 - Fitting non-linear Decision Tree Classification models
 - Handling categorical and continuous features automatically for partition mapping
 - Generating class predictions on evaluation test data
 - Evaluating classification performance metrics against baseline models
 - Visualizing decision trees graphically with split nodes, Gini criteria, and leaf samples
 
-## 5. Random Forest
+## 7. Random Forest
 
-### Functions
-
+#### Functions
 - `RandomForestClassifier()`
 - `fit()`
 - `predict()`
@@ -138,18 +190,16 @@ The datasets used throughout the repository are synthetic datasets generated wit
 - `confusion_matrix()`
 - `classification_report()`
 
-### Key Operations
-
-- Implementing ensemble learning via bagging with Random Forest classifiers
+#### Key Operations
+- Implementing ensemble learning via bagging with Random Forest Classifiers
 - Configuring model parameters such as the number of estimators for forest construction
 - Training multiple decision trees on random subsets of data to reduce model variance
 - Generating robust ensemble class predictions
 - Evaluating performance gains compared to a single standalone decision tree
 
-## 6. K-Means Clustering
+## 8. K-means
 
-### Functions
-
+#### Functions
 - `range()`
 - `KMeans()`
 - `fit()`
@@ -157,18 +207,16 @@ The datasets used throughout the repository are synthetic datasets generated wit
 - `zip()`
 - `print()`
 
-### Key Operations
-
+#### Key Operations
 - Implementing distance-based, centroid-based unsupervised clustering algorithms
 - Iterating through a range of cluster numbers ($K$ values) to evaluate model quality
 - Calculating inertia (distortion) values across $K$ values for the Elbow Method
 - Computing Silhouette Scores to measure cluster separation and cohesion
 - Printing and evaluating performance metrics to guide the choice of optimal $K$
 
-## 7. Principal Component Analysis (PCA)
+## 9. Principal Component Analysis (PCA)
 
-### Functions
-
+#### Functions
 - `KMeans()`
 - `fit()`
 - `PCA()`
@@ -177,8 +225,7 @@ The datasets used throughout the repository are synthetic datasets generated wit
 - `plt.scatter()`
 - `legend_elements()`
 
-### Key Operations
-
+#### Key Operations
 - Fitting a final K-Means model based on the optimal number of clusters discovered
 - Reducing multi-dimensional feature space down to two principal components using PCA
 - Transforming high-dimensional data into PC1 and PC2 score spaces
